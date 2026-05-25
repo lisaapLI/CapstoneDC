@@ -1,43 +1,71 @@
-# =========================
-# FRONTEND (React)
-# =========================
-quizml-frontend/node_modules/
-quizml-frontend/dist/
-quizml-frontend/build/
-quizml-frontend/.vite/
-quizml-frontend/.env
+# ============================================
+# .gitignore — Eureka Quiz (React + Flask)
+# ============================================
 
-# =========================
-# BACKEND (Python)
-# =========================
-quizml-backend/venv/
-quizml-backend/env/
-quizml-backend/.venv/
-quizml-backend/__pycache__/
-quizml-backend/*.pyc
-quizml-backend/.env
+# ── Python / Flask ──────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+venv/
+env/
+.env
+.env.*
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+.mypy_cache/
 
-# =========================
-# DATABASE
-# =========================
-*.sql
-*.sqlite3
+# ── Node / React / Vite ─────────────────────
+node_modules/
+dist/
+dist-ssr/
+*.local
+.cache/
+
+# ── Env files ────────────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ── Database / SQL dumps ─────────────────────
+*.sql.bak
+*.sqlite
 *.db
 
-# =========================
-# MACHINE LEARNING
-# =========================
-quizml-backend/models/
-quizml-backend/datasets/
-*.h5
-*.pt
-*.pth
-*.pkl
-
-# =========================
-# GENERAL
-# =========================
-quizml-frontend/.vscode/
-.idea/
+# ── OS files ─────────────────────────────────
 .DS_Store
+.DS_Store?
+._*
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── IDE / Editor ─────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── Logs ─────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Misc ─────────────────────────────────────
+*.zip
+*.tar.gz
+.tmp/
+tmp/
